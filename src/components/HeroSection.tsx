@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <section className="relative h-[500px] w-full overflow-hidden">
+    <section className="relative h-[400px] md:h-[500px] w-full overflow-hidden">
       {/* Hero Image */}
       <div className="absolute inset-0">
         <Image
@@ -29,13 +29,16 @@ export default function HeroSection() {
       <div className="relative h-full container-custom flex flex-col justify-center">
         <div className="max-w-3xl">
           {/* Hero Heading - Exact typography from design */}
-          <h1 className="text-white mb-4" style={{ fontSize: '3rem', lineHeight: '1.1' }}>
+          <h1 className="text-white mb-4 text-3xl md:text-4xl lg:text-5xl" style={{ lineHeight: '1.1' }}>
             Your Family Adventure
             <br />
             Starts Here
           </h1>
-          <p className="text-white text-lg mb-8 font-normal">
-            Affordable & Easy Vacation Planning
+          <p className="text-white text-lg md:text-xl mb-2 font-medium">
+            Discover Affordable Family Vacations Nationwide
+          </p>
+          <p className="text-white/90 text-sm md:text-base lg:text-lg mb-8 font-normal">
+            Over 10,000 verified properties • Best price guarantee • Book with confidence
           </p>
 
           {/* Search Bar - White background with shadow */}
