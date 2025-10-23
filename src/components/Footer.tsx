@@ -20,8 +20,8 @@ export default function Footer() {
             <Image
               src="/generated/budgetstay-logo.png"
               alt="BudgetStay"
-              width={180}
-              height={50}
+              width={120}
+              height={35}
               className="object-contain brightness-0 invert"
             />
           </Link>

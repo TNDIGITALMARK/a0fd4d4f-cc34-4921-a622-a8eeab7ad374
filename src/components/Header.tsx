@@ -14,8 +14,8 @@ export default function Header() {
             <Image
               src="/generated/budgetstay-logo.png"
               alt="BudgetStay"
-              width={80}
-              height={24}
+              width={50}
+              height={15}
               className="object-contain"
               priority
             />
