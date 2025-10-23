@@ -148,8 +148,20 @@ export default function DestinationsPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-primary/80 text-white py-20">
-        <div className="container-custom">
+      <section className="relative bg-gradient-to-r from-primary to-primary/80 text-white py-20 overflow-hidden">
+        {/* Faded Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/generated/hero-family-vacation.jpg"
+            alt="Family Vacation"
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+        </div>
+
+        {/* Content */}
+        <div className="container-custom relative z-10">
           <h1 className="text-white mb-6">Explore Our Destinations</h1>
           <p className="text-xl text-white/90 max-w-3xl mb-8">
             Discover family-friendly destinations across the United States. From beaches to mountains,

@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 
@@ -13,6 +14,19 @@ export default function Footer() {
       }}
     >
       <div className="container-custom">
+        {/* Logo Section */}
+        <div className="mb-8 pb-8 border-b border-white/20">
+          <Link href="/" className="inline-block hover:opacity-80 transition-opacity">
+            <Image
+              src="/generated/budgetstay-logo.png"
+              alt="BudgetStay"
+              width={180}
+              height={50}
+              className="object-contain brightness-0 invert"
+            />
+          </Link>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
           {/* Company */}
           <div>
